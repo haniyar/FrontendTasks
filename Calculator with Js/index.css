@@ -1,0 +1,113 @@
+html{
+    font-size: 20px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+  /*  background-color: #ffffff;*/
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(193,174,255,1) 100%);
+}
+.calculator{
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    display: inline-block;
+    margin: 70px 30% 0 35%;
+    background-color: #403165;
+}
+.calculator::before, .calculator::after {
+    content: "";
+    display: table;
+}
+.calculator::after {
+    clear: both;
+}
+.calculator_key{
+    border-radius: 50%;
+    color: white;
+    background-color: #875ea7;
+    border: none;
+    margin: 6px;
+    width: 65px;
+    height: 65px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.sb{
+    background-color: #b889ff;
+}
+.calculator_key:not(.enter):hover {
+    background: #00d1c5;
+}
+.calculator-keys{
+    padding: 5px 6px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
+.enter{
+    grid-column: 4 / 5;
+    grid-row: 2 / span 4;
+    height: auto;
+    border-radius: 40px;
+    background-color: #c1aeff;
+    color: white;
+    border: none;
+}
+.btn-5,.clear {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn-5:hover,.clear:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.54), 0 0 25px rgba(255, 255, 255, 0.24);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+.calc-box{
+    position: relative;
+    height: 90px;
+    text-align: end;
+    width: 75%;
+}
+.calc-box input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    background-color: #403165;
+}
+.clear{
+    background-color: #00d1c5;
+    color: white;
+    border: none;
+}
+.reset {
+    background: rgba(201, 120, 116, .28);
+    color: #c97874;
+    font-weight: 400;
+    margin-left: -77px;
+    padding: 0.5em 1em;
+    position: absolute;
+    top: -20em;
+    left: 50%;
+    width: auto;
+    height: auto;
+}
+.reset:hover {
+    background: #c97874;
+    color: #100a1c;
+}
+.reset.show {
+    top: 20em;
+    animation: fadein 4s;
+}
