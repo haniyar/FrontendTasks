@@ -1,0 +1,32 @@
+
+body{
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit';
+}
+.card{
+    border-radius: 15px;
+    background-color: white;
+    display: block;
+    align-self: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 15px 0;
+    width: 371px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 14px;
+}
+.card-img{
+    border-radius: 15px;
+    width: 100%;
+}
+.container{
+    width: 90% !important;
+    margin: 0 auto!important;
+    text-align: center;
+}
+.container h2{
+    color: hsl(218, 44%, 22%);
+}
+.container p{
+    color: hsl(220, 15%, 55%);
+    font-size: 15px;
+}
