@@ -1,5 +1,5 @@
 // Set the launch date (YYYY-MM-DD)
-const launchDate = new Date('2023-10-30T00:00:00Z').getTime();
+const launchDate = new Date('2023-11-30T00:00:00Z').getTime();
 
 // Update the countdown every second
 const interval = setInterval(() => {
